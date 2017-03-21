@@ -274,4 +274,9 @@ html, body {
         bottom: 5px;
         opacity: 0;
     }
+
+    .sidebar {
+        height: 0px;
+        overflow: hidden;
+    }
 }
