@@ -4,7 +4,7 @@
 
 # To-do
 
-Mission page - Blurb + icon or two (homemade)
-Problem page - Blurb + video
-Solution page - Blurb + CAD image
-Team page - self-explanatory
+Mission page - Blurb + icon or two (homemade) - Top/Bottom layout
+Problem page - Blurb + video - idk go crazy
+Solution page - Blurb + CAD image - Left/Right layout
+Team page - self-explanatory - also go crazy
