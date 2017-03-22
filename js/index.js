@@ -54,7 +54,13 @@ $(document).ready(function() {
 
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop() + (window.innerHeight/2);
-    var pane = parseInt(scroll/window.innerHeight);
+    var pane = 0;
+    
+    $(".pane").each(function() {
+        if (scroll > $(this).position().top) {
+            pane = $(".pane").index($(this));
+        }
+    });
     
     if (pane != currentPane) {
         $(".bubble-cont").children(".bubble").removeClass("big-bubble");

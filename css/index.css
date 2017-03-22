@@ -205,13 +205,20 @@ html, body {
 .pane {
     position: relative;
     width: 100%;
-    height: 100%;
     background-color: white;
     color: #2D4675;
     text-align: center;
     font-size: 2em;
     font-weight: 100;
     overflow: hidden;
+}
+
+#home, #mission, #problem, #solution, #team, #contact {
+    height: 100%;
+}
+
+#news {
+    padding-top: 75px;
 }
 
 .paragraph {
@@ -229,6 +236,48 @@ html, body {
 }
 
 /* END HERE */
+
+.article {
+    width: calc(33% - 50px);
+    overflow: hidden;
+    font-size: 0.5em;
+    background-color: #EEE;
+    box-shadow: 5px 5px 0px #2D4675;
+    border-radius: 5px;
+    text-align: left;
+    margin: 25px;
+    padding-bottom: 10px;
+    float: left;
+}
+
+.article > .image {
+    width: 100%;
+    height: auto;
+}
+
+.article > .title {
+    font-size: 1.5em;
+    font-weight: 100;
+    padding: 10px;
+}
+
+.article > .date {
+    padding-left: 10px;
+    font-style: italic;
+    font-size: 0.75em;
+    color: gray;
+}
+
+.article > .link {
+    padding-left: 10px;
+    text-decoration: underline;
+}
+    
+.article > .body {
+    padding: 10px;
+    color: rgba(45, 70, 117, 0.75);
+}
+
 
 .pure-form {
     position: relative;
@@ -395,5 +444,15 @@ textarea:focus, input:focus {
     .sidebar {
         height: 0px;
         overflow: hidden;
+    }
+    
+    
+    .pure-group > label {
+        left: 30px;
+    }
+    
+    .pure-group > input, .pure-group > textarea {
+        left: 0%;
+        width: calc(100% - 0px);
     }
 }
