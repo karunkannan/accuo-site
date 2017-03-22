@@ -29,7 +29,14 @@ html, body {
     font-size: 2em;
     display:inline-block;
     font-weight: 200;
-    padding-left: 20px;
+    margin-left: 20px;
+    position: relative;
+    background-image: url("../images/ACCUO.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -5px;
+    width: 120px;
+    height: 56px;
 }
 
 .header-title:hover {
@@ -41,9 +48,9 @@ html, body {
     position: absolute;
     right: 15px;
     top: 15px;
-    height: 30px;
     width: 30px;
     overflow: hidden;
+    height: 0px;
 }
 
 .hamburger-line {
@@ -274,7 +281,7 @@ html, body {
     position: relative;
     top: 36px;
     font-size: 0.4em;
-    left: -300px;
+    left: -299px;
     background-color: white;
     padding: 3px;
     padding-top: 0px;
@@ -282,7 +289,7 @@ html, body {
 }
 
 .name-invalid {
-    left: -320px;
+    left: -325px;
 }
 
 .email-invalid-active {
@@ -300,6 +307,7 @@ html, body {
     background-color: white;
     font-family: sans-serif;
     color: rgba(0, 0, 0, 0.4);
+    margin-top: 5px;
 }
 
 #gform > button:hover {
@@ -326,12 +334,16 @@ textarea:focus, input:focus {
         padding-right: 0px;
         width: 100%;
     }
+    
+    .hamburger {
+        height: 30px;
+    }
 
     .menu {
         display: block;
         position: relative;
         left: 0px;
-        top: 10px;
+        top: -6px;
         padding: 0px;
         height: 0px;
         overflow: hidden;
