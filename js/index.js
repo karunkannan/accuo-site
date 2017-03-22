@@ -66,11 +66,43 @@ $(window).scroll(function (event) {
         clearTimeout(bubbleTimer);
         
         bubbleTimer = setTimeout(function() {
-            console.log("yo");
             $(".bubble-cont").children(".bubble-title").removeClass("bubble-title-show");
-        }, 5000);
+        }, 3000);
         currentPane = pane;
     }
+});
+
+$("input").focusin(function() {
+    if (!$(this).siblings("label").hasClass("input-label-active")) {
+        $(this).siblings("label").addClass("input-label-active");
+    }
+    $(this).addClass("input-active");
+});
+
+$("input").focusout(function() {
+    if ($(this).val().length == 0) {
+        $(this).siblings("label").removeClass("input-label-active");
+    }
+    $(this).removeClass("input-active");   
+    if ($(this).attr("id") == "email") {
+        $(".email-invalid").removeClass("email-invalid-active");
+    } else if ($(this).attr("id") == "name") {
+        $(".name-invalid").removeClass("email-invalid-active");
+    }
+});
+
+$("textarea").focusin(function() {
+    if (!$(this).siblings("label").hasClass("input-label-active")) {
+        $(this).siblings("label").addClass("input-label-active");
+    }
+    $(this).addClass("input-active");
+});
+
+$("textarea").focusout(function() {
+    if ($(this).val().length == 0) {
+        $(this).siblings("label").removeClass("input-label-active");
+    }
+    $(this).removeClass("input-active");
 });
 
 $("#home-click").click(function() {

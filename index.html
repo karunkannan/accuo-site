@@ -12,7 +12,7 @@
                 <div class="hamburger-line animated" id="ham3"></div>
             </div>
             <div class="menu animated">
-                <div class="menu-title animated">HOME
+                <div class="menu-title animated">ABOUT US
                     <div class="menu-underline animated"></div>
                     <div class="menu-sub animated">
                         <div class="menu-subtitle animated" id="mission-click">Our Mission</div>
@@ -59,10 +59,10 @@
                 <div class="bubble-title animated">Contact</div>
             </div>
         </div>
-        <!-- EMILY START HERE -->
         <div class="pane" id="home">
             <div class="paragraph">Fake news.</div>
         </div>
+        <!-- EMILY START HERE -->
         <div class="pane" id="mission">
             <div class="paragraph">More fake news.</div>
         </div>
@@ -75,14 +75,39 @@
         <div class="pane" id="team">
             <div class="paragraph">BIGLY fake news.</div>
         </div>
+        <!-- EMILY END HERE -->
         <div class="pane" id="news">
             <div class="paragraph">The BIGLIEST fake news.</div>
         </div>
         <div class="pane" id="contact">
-            <div class="paragraph">fin.</div>
+            <div class="pane-title contact-title">Send us an email!</div>
+
+            <form id="gform" method="POST" class="pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbyQZ3SxkyVV79D90rsTURKEDQlJDzdhVmZQhTRHh97KMRbrZEc/exec">
+                <fieldset class="pure-group">
+                    <input class="animated" id="name" name="name" />
+                    <label for="name" class="animated">Name</label>
+                    <span class="animated name-invalid">Must enter your name</span>
+                </fieldset>
+
+                <fieldset class="pure-group">
+                    <input class="animated" id="email" name="email" type="email" value="" required/>
+                    <label for="email" class="animated">Email Address</label>
+                    <span class="animated email-invalid">Must be a valid email address</span>
+                </fieldset>
+                
+                <fieldset class="pure-group">
+                    <textarea class="animated" id="message" name="message" rows="10"></textarea>
+                    <label for="message" class="animated">Your Inquiry</label>
+                </fieldset>
+
+                <button class="animated button-success pure-button button-xlarge">
+                    Send
+                </button>
+
+            </form>
         </div>
-        <!-- EMILY START HERE -->
         <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
     </body>
 </html>
