@@ -50,6 +50,12 @@ $(document).ready(function() {
     var pane = parseInt(scroll/window.innerHeight);
     
     currentPane = pane;
+    
+    $(".article").each(function() {
+        $(this).css("height", $(this).css("height"));
+        $(this).children(".popout").children(".body").css("height", "auto");
+        $(this).children(".popout").children(".body").css("padding-bottom", "10px");
+    });
 });
 
 $(window).scroll(function (event) {
@@ -75,6 +81,16 @@ $(window).scroll(function (event) {
             $(".bubble-cont").children(".bubble-title").removeClass("bubble-title-show");
         }, 3000);
         currentPane = pane;
+        
+        if (currentPane == 5) {
+            $(".bubble").addClass("bubble-white");
+            $(".big-bubble").addClass("big-bubble-white");
+            $(".bubble-title").addClass("bubble-title-white");
+        } else {
+            $(".bubble").removeClass("bubble-white");
+            $(".big-bubble").removeClass("big-bubble-white");
+            $(".bubble-title").removeClass("bubble-title-white");
+        }
     }
 });
 
@@ -151,4 +167,10 @@ $("#contact-click").click(function() {
     $("html, body").animate({
         scrollTop: $("#contact").offset().top
     });
+});
+
+$(".article").hover(function() {
+    $(this).children(".popout").css("top", -1 * parseInt($(this).children(".popout").children(".body").outerHeight()));
+}, function() {
+    $(this).children(".popout").css("top", "0px");
 });
