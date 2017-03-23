@@ -29,7 +29,14 @@ html, body {
     font-size: 2em;
     display:inline-block;
     font-weight: 200;
-    padding-left: 20px;
+    margin-left: 20px;
+    position: relative;
+    background-image: url("../images/ACCUO.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -5px;
+    width: 120px;
+    height: 56px;
 }
 
 .header-title:hover {
@@ -39,38 +46,38 @@ html, body {
 
 .hamburger {
     position: absolute;
-    right: 10px;
-    top: 10px;
-    height: 0px;
-    width: 40px;
+    right: 15px;
+    top: 15px;
+    width: 30px;
     overflow: hidden;
+    height: 0px;
 }
 
 .hamburger-line {
     width: 100%;
     height: 2px;
     background-color: #2D4675;
-    margin-bottom: 17px;
+    margin-bottom: 10px;
 }
 
 .ham1-clicked {
-    -ms-transform: rotate(45deg) translate(-10px, 28px);
-    -webkit-transform: rotate(45deg) translate(-10px, 28px);
-    transform: rotate(45deg) translate(-10px, 28px);
+    -ms-transform: rotate(45deg) translate(0px, 20px);
+    -webkit-transform: rotate(45deg) translate(0px, 20px);
+    transform: rotate(45deg) translate(0px, 20px);
     width: 200%;
 }
 
 .ham2-clicked {
-    -ms-transform: translate(20px, 0px);
-    -webkit-transform: translate(20px, 0px);
-    transform: translate(20px, 0px);
+    -ms-transform: translate(15px, 0px);
+    -webkit-transform: translate(15px, 0px);
+    transform: translate(15px, 0px);
     width: 0%;
 }
 
 .ham3-clicked {
-    -ms-transform: rotate(-45deg) translate(-10px, -28px);
-    -webkit-transform: rotate(-45deg) translate(-10px, -28px);
-    transform: rotate(-45deg) translate(-10px, -28px);
+    -ms-transform: rotate(-45deg) translate(0px, -18px);
+    -webkit-transform: rotate(-45deg) translate(0px, -18px);
+    transform: rotate(-45deg) translate(0px, -18px);
     width: 200%;
 }
 
@@ -148,6 +155,7 @@ html, body {
     right: 0px;
     top: calc(50% - 105px);
     color: white;
+    z-index: 10;
 }
 
 .bubble-cont {
@@ -161,10 +169,17 @@ html, body {
     height: 5px;
     border: 1px solid #2D4675;
     box-shadow: 0px 0px 1px #2D4675;
+    background-color: white;
     border-radius: 100%;
     position: relative;
     right: 10px;
     top: 15px;
+}
+
+.bubble-white {
+    border: 1px solid white;
+    box-shadow: 0px 0px 1px white;
+    background-color: #2D4675;
 }
 
 .big-bubble {
@@ -175,28 +190,46 @@ html, body {
     top: 12.5px;
 }
 
+.big-bubble-white {
+    background-color: white;
+}
+
 .bubble-title {
     position: absolute;
-    right: 30px;
-    width: 150px;
-    top: 7.5px;
+    right: 20px;
+    width: 125px;
+    top: 2.5px;
     text-align: right;
     color: #2D4675;
-    text-shadow: 0px 0px 1px white;
     font-weight: 100;
     font-size: 1.1em;
     opacity: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+}
+
+.news-bubble-title {
+    width: 50px;
+}
+
+.news-bubble-title-white {
+    color: white;
+    background-color: #2D4675;
 }
 
 .bubble-title-show {
     opacity: 1;
+    right: 20px;
 }
 
 /* EMILY START HERE */
 
 .pane {
+    position: relative;
     width: 100%;
-    height: 100%;
     background-color: white;
     color: #2D4675;
     text-align: center;
@@ -205,12 +238,284 @@ html, body {
     overflow: hidden;
 }
 
+#home, #mission, #problem, #solution, #team, #contact {
+    height: 100%;
+}
+
+#news {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: #2D4675;
+}
+
 .paragraph {
     position: relative;
     top: 50%;
 }
 
+.pane-title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: calc(50% - 250px);
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
 /* END HERE */
+
+.article {
+    width: calc(33% - 55px);
+    overflow: hidden;
+    font-size: 0.5em;
+    background-color: #FFF;
+    box-shadow: 5px 5px 0px #7396DC;
+    text-align: left;
+    margin: 25px;
+    padding-bottom: 0px;
+    float: left;
+}
+
+.article-active {
+    height: auto;
+}
+
+.article > .image-cont {
+    width: 100%;
+    height: 0px;
+    padding-bottom: 100%;
+}
+
+.article > .image-cont > .image {
+    width: auto;
+    height: 100%;
+    position: relative;
+    left: -50%;
+}
+
+.article > .date {
+    font-size: 1.75em;
+    color: white;
+    background-color: #7396DC;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    text-align: center;
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 100;
+}
+
+.article > .popout {
+    position: relative;
+    background-color: white;
+    top: 0px;
+    overflow: scroll;
+}
+
+.article > .popout > .top-bar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
+    background-color: #7396DC;
+    z-index: 0;
+}
+
+.article > .popout > .location {
+    font-size: 0.75em;
+    font-weight: 100;
+    padding: 10px;
+    color: white;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.article > .popout > .title {
+    font-size: 1.5em;
+    font-weight: 100;
+    padding: 10px;
+    color: #7396DC;
+    line-height: 1.4em;
+}
+
+.article > .date > .small-date {
+    font-size: 0.5em;
+    display: block;
+}
+
+.article > .popout > .link {
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-top: 2.5px;
+    padding-top: 10px;
+    text-decoration: underline;
+    float: right;
+    font-size: 0.75em;
+    background-image: url("../images/arrow.png");
+    background-size: 100% 100%;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.article > .popout > .exit {
+    position: relative;
+    margin-top: 5px;
+    width: 0px;
+    height: 20px;
+    float: right;
+    overflow: hidden;
+}
+
+.article > .popout > .exit:hover {
+    cursor: pointer; 
+    cursor: hand; 
+}
+
+
+.article > .popout > .exit-active {
+    margin-right: 20px;
+    height: 20px;
+}
+
+.article > .popout > .exit > .exit-hr {
+    background-color: white;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid white;
+}
+
+.article > .popout > .exit > #exit-1 {
+    -ms-transform: rotate(45deg) translate(0px, 8px);
+    -webkit-transform: rotate(45deg) translate(0px, 8px);
+    transform: rotate(45deg) translate(0px, 8px);
+    width: 200%;
+}
+
+.article > .popout > .exit > #exit-2 {
+    -ms-transform: rotate(-45deg) translate(0px, -13px);
+    -webkit-transform: rotate(-45deg) translate(0px, -13px);
+    transform: rotate(-45deg) translate(0px, -13px);
+    width: 200%;
+}
+
+.article > .popout > .body {
+    padding: 10px;
+    padding-top: 0px;
+    color: #777;
+    height: 0px;
+    padding-bottom: 0px;
+}
+
+.pure-form {
+    position: relative;
+    top: calc(50% - 250px);
+}
+
+.pure-group {
+    border: none;
+    color: rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.pure-group > label {
+    font-size: 0.5em;
+    float: left;
+    position: absolute;
+    left: calc(50% - 190px);
+    top: 22px;
+    padding: 3px;
+    padding-bottom: none;
+}
+
+.pure-group > input, .pure-group > textarea {
+    position: relative;
+    border: none;
+    float: left;
+    font-size: 0.6em;
+    top: -2px;
+    left: calc(50% - 200px);
+    width: 400px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.pure-group > .input-label-active {
+    top: -2px;
+    background-color: white;
+    color: #2D4675;
+}
+
+.pure-group > .input-active {
+    border-color: rgba(45,70,117, 0.5);
+    color: #2D4675;
+}
+
+.email-invalid, .name-invalid {
+    color: red;
+    position: relative;
+    top: 36px;
+    font-size: 0.4em;
+    left: -299px;
+    background-color: white;
+    padding: 3px;
+    padding-top: 0px;
+    opacity: 0;
+}
+
+.name-invalid {
+    left: -325px;
+}
+
+.email-invalid-active {
+    opacity: 1;
+}
+
+#gform > button {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100px;
+    height: 40px;
+    font-size: 0.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    background-color: white;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+    margin-top: 5px;
+}
+
+#gform > button:hover {
+    border-color: rgba(45,70,117, 0.5);
+    color: #2D4675;
+    cursor: pointer; 
+    cursor: hand; 
+}
+
+#gform > button:active {
+    background-color: rgba(45,70,117, 1);
+    color: white;
+    cursor: pointer; 
+    cursor: hand; 
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 1000px) { 
+    .article {
+        width: calc(50% - 63px);
+    }
+}
 
 @media screen and (max-width: 700px) { 
     .header {
@@ -220,14 +525,14 @@ html, body {
     }
     
     .hamburger {
-        height: 40px;
+        height: 30px;
     }
 
     .menu {
         display: block;
         position: relative;
         left: 0px;
-        top: 10px;
+        top: -6px;
         padding: 0px;
         height: 0px;
         overflow: hidden;
@@ -255,6 +560,7 @@ html, body {
         background-color: none;
         box-shadow: none;
         opacity: 1;
+        height: auto;
         top: -5px;
     }
     
@@ -273,5 +579,32 @@ html, body {
     .menu-underline-active {
         bottom: 5px;
         opacity: 0;
+    }
+
+    .sidebar {
+        height: 0px;
+        overflow: hidden;
+    }
+    
+    .article {
+        width: calc(100% - 55px);
+    }
+    
+    .article > .popout > .link {
+        margin-right: 20px;
+    }
+        
+    .article > .popout > .exit-active {
+        margin-right: 20px;
+        width: 20px;
+    }
+    
+    .pure-group > label {
+        left: 30px;
+    }
+    
+    .pure-group > input, .pure-group > textarea {
+        left: 0%;
+        width: calc(100% - 0px);
     }
 }
