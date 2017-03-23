@@ -85,11 +85,11 @@ $(window).scroll(function (event) {
         if (currentPane == 5) {
             $(".bubble").addClass("bubble-white");
             $(".big-bubble").addClass("big-bubble-white");
-            $(".bubble-title").addClass("bubble-title-white");
+            $(".news-bubble-title").addClass("news-bubble-title-white");
         } else {
             $(".bubble").removeClass("bubble-white");
             $(".big-bubble").removeClass("big-bubble-white");
-            $(".bubble-title").removeClass("bubble-title-white");
+            $(".news-bubble-title").removeClass("news-bubble-title-white");
         }
     }
 });
@@ -170,7 +170,38 @@ $("#contact-click").click(function() {
 });
 
 $(".article").hover(function() {
-    $(this).children(".popout").css("top", -1 * parseInt($(this).children(".popout").children(".body").outerHeight()));
+    var article_height = parseInt($(this).css("height"));
+    var popout_height = parseInt($(this).children(".popout").outerHeight());
+    var body_height = parseInt($(this).children(".popout").children(".body").css("height")) 
+    
+    var diff = popout_height - article_height;
+    
+    if (diff < 0) {
+        diff = 0;
+    } else {
+        $(this).addClass("article-active");
+    }
+    
+    
+    $(this).children(".popout").css("top", -1 * parseInt($(this).children(".popout").children(".body").outerHeight()) + diff);
+    
+    if (diff > 0) {
+        $(this).children(".popout").children(".body").css("height", body_height - diff);
+    }
+    
+    $(this).children(".popout").children(".exit").addClass("exit-active");
 }, function() {
-    $(this).children(".popout").css("top", "0px");
+    removePopup($(this));
+});
+
+function removePopup(article) {
+    $(article).children(".popout").css("top", "0px");
+    $(article).children(".popout").animate({ scrollTop: 0 }, "fast");
+    $(article).removeClass("article-active");
+    $(article).children(".popout").children(".exit").removeClass("exit-active");
+}
+
+$(".exit").click(function() {
+    console.log("lol");
+    removePopup($(this).parent().parent());
 });

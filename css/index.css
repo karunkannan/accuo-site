@@ -215,7 +215,7 @@ html, body {
     width: 50px;
 }
 
-.bubble-title-white {
+.news-bubble-title-white {
     color: white;
     background-color: #2D4675;
 }
@@ -274,7 +274,10 @@ html, body {
     margin: 25px;
     padding-bottom: 0px;
     float: left;
-    overflow: hidden;
+}
+
+.article-active {
+    height: auto;
 }
 
 .article > .image-cont {
@@ -309,6 +312,7 @@ html, body {
     position: relative;
     background-color: white;
     top: 0px;
+    overflow: scroll;
 }
 
 .article > .popout > .top-bar {
@@ -346,7 +350,7 @@ html, body {
 
 .article > .popout > .link {
     padding-right: 10px;
-    margin-right: 5px;
+    margin-right: 10px;
     margin-top: 2.5px;
     padding-top: 10px;
     text-decoration: underline;
@@ -359,7 +363,48 @@ html, body {
     position: relative;
     z-index: 1;
 }
-    
+
+.article > .popout > .exit {
+    position: relative;
+    margin-top: 5px;
+    width: 0px;
+    height: 20px;
+    float: right;
+    overflow: hidden;
+}
+
+.article > .popout > .exit:hover {
+    cursor: pointer; 
+    cursor: hand; 
+}
+
+
+.article > .popout > .exit-active {
+    margin-right: 20px;
+    height: 20px;
+}
+
+.article > .popout > .exit > .exit-hr {
+    background-color: white;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid white;
+}
+
+.article > .popout > .exit > #exit-1 {
+    -ms-transform: rotate(45deg) translate(0px, 8px);
+    -webkit-transform: rotate(45deg) translate(0px, 8px);
+    transform: rotate(45deg) translate(0px, 8px);
+    width: 200%;
+}
+
+.article > .popout > .exit > #exit-2 {
+    -ms-transform: rotate(-45deg) translate(0px, -13px);
+    -webkit-transform: rotate(-45deg) translate(0px, -13px);
+    transform: rotate(-45deg) translate(0px, -13px);
+    width: 200%;
+}
+
 .article > .popout > .body {
     padding: 10px;
     padding-top: 0px;
@@ -367,7 +412,6 @@ html, body {
     height: 0px;
     padding-bottom: 0px;
 }
-
 
 .pure-form {
     position: relative;
@@ -385,7 +429,7 @@ html, body {
     float: left;
     position: absolute;
     left: calc(50% - 190px);
-    top: 20px;
+    top: 22px;
     padding: 3px;
     padding-bottom: none;
 }
@@ -544,6 +588,15 @@ textarea:focus, input:focus {
     
     .article {
         width: calc(100% - 55px);
+    }
+    
+    .article > .popout > .link {
+        margin-right: 20px;
+    }
+        
+    .article > .popout > .exit-active {
+        margin-right: 20px;
+        width: 20px;
     }
     
     .pure-group > label {
