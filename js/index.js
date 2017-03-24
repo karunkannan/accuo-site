@@ -1,5 +1,7 @@
 var currentPane = 0;
 var bubbleTimer = null;
+var loadingTimer = null;
+var loadingTime = 0;
 
 function removeHamburger() {
     $("#ham1").removeClass("ham1-clicked");
@@ -57,6 +59,31 @@ $(document).ready(function() {
         $(this).children(".popout").children(".body").css("padding-bottom", "10px");
     });
 });
+
+function loading() {
+    loadingTime = loadingTime + 0.1;
+
+    if (loadingTime >= Math.PI * 2) {
+        loadingTime = 0;
+    }
+    
+    var x = Math.cos(loadingTime) * 20;
+    var y = Math.sin(loadingTime) * 20;
+    
+    $(".loading-bubble").css("left", x + 14.5);
+    $(".loading-bubble").css("top", y + 14.5);
+}
+
+function endLoading() {
+    clearInterval(loadingTimer);
+}
+
+function startLoading() {
+    loadingTimer = setInterval(loading, 16);
+    $(".pure-button").addClass("button-loading");
+    $(".send").text("");
+    $(".loading-bubble").addClass("loading-bubble-active");
+}
 
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop() + (window.innerHeight/2);

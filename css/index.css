@@ -276,6 +276,10 @@ html, body {
     float: left;
 }
 
+.article:hover {
+    box-shadow: 10px 10px 0px #7396DC;
+}
+
 .article-active {
     height: auto;
 }
@@ -378,12 +382,6 @@ html, body {
     cursor: hand; 
 }
 
-
-.article > .popout > .exit-active {
-    margin-right: 20px;
-    height: 20px;
-}
-
 .article > .popout > .exit > .exit-hr {
     background-color: white;
     height: 1px;
@@ -480,6 +478,7 @@ html, body {
 }
 
 #gform > button {
+    position: relative;
     outline: none;
     border: 1px solid rgba(0, 0, 0, 0.1);
     width: 100px;
@@ -505,6 +504,38 @@ html, body {
     color: white;
     cursor: pointer; 
     cursor: hand; 
+}
+
+#gform > .button-loading {
+    border-color: rgba(45,70,117, 1);
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+
+#gform > .button-loading:hover {
+    border-color: rgba(45,70,117, 1);
+    cursor: default;
+}
+
+#gform > .button-loading:active {
+    background-color: rgba(0, 0, 0, 0);
+    cursor: default;
+}
+
+.loading-bubble {
+    position: absolute;
+    top: 15px;
+    left: 45px;
+    width: 10px;
+    height: 10px;
+    background-color: #2D4675;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.loading-bubble-active {
+    opacity: 1;
 }
 
 textarea:focus, input:focus {
