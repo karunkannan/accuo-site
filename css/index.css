@@ -645,7 +645,7 @@ textarea:focus, input:focus {
     
     .pure-form {
         position: relative;
-        top: 50px;
+        top: 0px;
     }
     
     #gform > button {
@@ -653,7 +653,7 @@ textarea:focus, input:focus {
     }
     
     .contact-title {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         top: 75px;
     }
 }
