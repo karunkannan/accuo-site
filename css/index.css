@@ -621,6 +621,10 @@ textarea:focus, input:focus {
         width: calc(100% - 55px);
     }
     
+    .article:hover {
+        box-shadow: 5px 5px 0px #7396DC;
+    }
+    
     .article > .popout > .link {
         margin-right: 20px;
     }

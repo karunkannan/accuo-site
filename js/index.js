@@ -223,7 +223,7 @@ $(".article").hover(function() {
 
 function removePopup(article) {
     $(article).children(".popout").css("top", "0px");
-    $(article).children(".popout").animate({ scrollTop: 0 }, "fast");
+    $(article).children(".popout").children(".body").animate({ scrollTop: 0 }, "fast");
     $(article).removeClass("article-active");
     $(article).children(".popout").children(".exit").removeClass("exit-active");
 }
