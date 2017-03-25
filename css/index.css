@@ -195,7 +195,7 @@ html, body {
 }
 
 .bubble-title {
-    position: absolute;
+    posih2tion: absolute;
     right: 20px;
     width: 125px;
     top: 2.5px;
@@ -226,6 +226,11 @@ html, body {
 }
 
 /* EMILY START HERE */
+
+h1 {
+    color: #2d4675;
+    text-align: center;
+}
 
 .pane {
     position: relative;
