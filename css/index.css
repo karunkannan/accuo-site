@@ -315,6 +315,26 @@ html, body {
 /* W3C */
   }
 
+.soln-icon {
+    position: relative;
+    width: 90%;
+    margin: 0px 25%;
+    margin-top: 15%;
+}
+
+.soln-col {
+    position: relative;
+    float: left;
+    width: 33%;
+    margin-top: 8%;
+}
+
+.soln-col-para {
+    font-size: 18px;
+    margin: 0px 12.5%;
+    margin-top:14%;
+}
+
 /* END HERE */
 
 .article {
