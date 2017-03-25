@@ -44,10 +44,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
       $(".name-invalid").addClass("email-invalid-active");
       return false;
   } else {
-<<<<<<< HEAD
     startLoading();
-=======
->>>>>>> 07ab610253ad94a8ed3a21cd5bd6fa2028479aa9
     var url = event.target.action;  //
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
@@ -59,10 +56,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
         console.log(xhr.responseText);
         document.getElementById('gform').style.display = 'none'; // hide form
         $(".contact-title").text("Thank you for contacting us, we will respond to you as soon as possible.");
-<<<<<<< HEAD
         endLoading();
-=======
->>>>>>> 07ab610253ad94a8ed3a21cd5bd6fa2028479aa9
         return;
     };
     // url encode form data for sending as post data

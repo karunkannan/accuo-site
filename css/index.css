@@ -231,12 +231,8 @@ h2 {
     text-align: center;
 }
 
-<<<<<<< HEAD
 .pane {
-=======
-.pane {   
-    top: 50%;
->>>>>>> 07ab610253ad94a8ed3a21cd5bd6fa2028479aa9
+    top: 0px;
     position: relative;
     width: 100%;
     background-color: white;
@@ -298,13 +294,10 @@ h2 {
     float: left;
 }
 
-<<<<<<< HEAD
 .article:hover {
     box-shadow: 10px 10px 0px #7396DC;
 }
-
-=======
->>>>>>> 07ab610253ad94a8ed3a21cd5bd6fa2028479aa9
+ 
 .article-active {
     height: auto;
 }
@@ -341,10 +334,7 @@ h2 {
     position: relative;
     background-color: white;
     top: 0px;
-<<<<<<< HEAD
-=======
     overflow: scroll;
->>>>>>> 07ab610253ad94a8ed3a21cd5bd6fa2028479aa9
 }
 
 .article > .popout > .top-bar {
@@ -410,15 +400,11 @@ h2 {
     cursor: hand; 
 }
 
-<<<<<<< HEAD
-=======
-
 .article > .popout > .exit-active {
     margin-right: 20px;
     height: 20px;
 }
 
->>>>>>> 07ab610253ad94a8ed3a21cd5bd6fa2028479aa9
 .article > .popout > .exit > .exit-hr {
     background-color: white;
     height: 1px;
@@ -446,10 +432,7 @@ h2 {
     color: #777;
     height: 0px;
     padding-bottom: 0px;
-<<<<<<< HEAD
     overflow: scroll;
-=======
->>>>>>> 07ab610253ad94a8ed3a21cd5bd6fa2028479aa9
 }
 
 .pure-form {
@@ -519,10 +502,7 @@ h2 {
 }
 
 #gform > button {
-<<<<<<< HEAD
     position: relative;
-=======
->>>>>>> 07ab610253ad94a8ed3a21cd5bd6fa2028479aa9
     outline: none;
     border: 1px solid rgba(0, 0, 0, 0.1);
     width: 100px;
@@ -550,7 +530,6 @@ h2 {
     cursor: hand; 
 }
 
-<<<<<<< HEAD
 #gform > .button-loading {
     border-color: rgba(45,70,117, 1);
     width: 40px;
@@ -583,8 +562,6 @@ h2 {
     opacity: 1;
 }
 
-=======
->>>>>>> 07ab610253ad94a8ed3a21cd5bd6fa2028479aa9
 textarea:focus, input:focus {
     outline: none;
 }
@@ -668,13 +645,10 @@ textarea:focus, input:focus {
         width: calc(100% - 55px);
     }
     
-<<<<<<< HEAD
     .article:hover {
         box-shadow: 5px 5px 0px #7396DC;
     }
     
-=======
->>>>>>> 07ab610253ad94a8ed3a21cd5bd6fa2028479aa9
     .article > .popout > .link {
         margin-right: 20px;
     }
@@ -692,7 +666,6 @@ textarea:focus, input:focus {
         left: 0%;
         width: calc(100% - 0px);
     }
-<<<<<<< HEAD
     
     #contact {
         height: auto;
@@ -711,6 +684,4 @@ textarea:focus, input:focus {
         margin-bottom: 100px;
         top: 75px;
     }
-=======
->>>>>>> 07ab610253ad94a8ed3a21cd5bd6fa2028479aa9
 }

@@ -124,7 +124,6 @@ $(window).scroll(function (event) {
 $("input").focusin(function() {
     if (!$(this).siblings("label").hasClass("input-label-active")) {
         $(this).siblings("label").addClass("input-label-active");
-<<<<<<< HEAD
     }
     $(this).addClass("input-active");
 });
@@ -138,8 +137,6 @@ $("input").focusout(function() {
         $(".email-invalid").removeClass("email-invalid-active");
     } else if ($(this).attr("id") == "name") {
         $(".name-invalid").removeClass("email-invalid-active");
-=======
->>>>>>> 07ab610253ad94a8ed3a21cd5bd6fa2028479aa9
     }
     $(this).addClass("input-active");
 });
@@ -253,11 +250,8 @@ $(".article").hover(function() {
 
 function removePopup(article) {
     $(article).children(".popout").css("top", "0px");
-<<<<<<< HEAD
     $(article).children(".popout").children(".body").animate({ scrollTop: 0 }, "fast");
-=======
     $(article).children(".popout").animate({ scrollTop: 0 }, "fast");
->>>>>>> 07ab610253ad94a8ed3a21cd5bd6fa2028479aa9
     $(article).removeClass("article-active");
     $(article).children(".popout").children(".exit").removeClass("exit-active");
 }
