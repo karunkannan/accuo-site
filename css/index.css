@@ -305,13 +305,13 @@ html, body {
 .dashed-border::after {
    right: -3px;
    height: 3px;
-   background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #ffffff), color-stop(50%, #2d4675), color-stop(51%, #2d4675), color-stop(90%, #ffffff));
-   background-image: -webkit-linear-gradient(left, #ffffff 10%, #2d4675 50%, #2d4675 51%, #ffffff 90%);
-   background-image: -moz-linear-gradient(left, #ffffff 10%, #2d4675 50%, #2d4675 51%, #ffffff 90%);
-   background-image: -o-linear-gradient(left, #ffffff 10%, #2d4675 50%, #2d4675 51%, #ffffff 90%);
-   background-image: -ms-linear-gradient(left, #ffffff 10%, #2d4675 50%, #2d4675 51%, #ffffff 90%);
+   background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(0,0,0,0)), color-stop(50%, #2d4675), color-stop(51%, #2d4675), color-stop(90%, rgba(0,0,0,0)));
+   background-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 10%, #2d4675 50%, #2d4675 51%, rgba(0,0,0,0) 90%);
+   background-image: -moz-linear-gradient(left, rgba(0,0,0,0) 10%, #2d4675 50%, #2d4675 51%, rgba(0,0,0,0) 90%);
+   background-image: -o-linear-gradient(left, rgba(0,0,0,0) 10%, #2d4675 50%, #2d4675 51%, rgba(0,0,0,0) 90%);
+   background-image: -ms-linear-gradient(left, rgba(0,0,0,0) 10%, #2d4675 50%, #2d4675 51%, rgba(0,0,0,0) 90%);
 /* IE10+ */
-   background-image: linear-gradient(to right, #ffffff 10%, #2d4675 50%, #2d4675 51%, #ffffff 90%);
+   background-image: linear-gradient(to right, rgba(0,0,0,0) 10%, #2d4675 50%, #2d4675 51%, rgba(0,0,0,0) 90%);
 /* W3C */
   }
 
