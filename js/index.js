@@ -115,7 +115,7 @@ function scrollEvent() {
         }, 3000);
         currentPane = pane;
         
-        if (currentPane == 5) {
+        if (currentPane == 6) {
             $(".bubble").addClass("bubble-white");
             $(".big-bubble").addClass("big-bubble-white");
             $(".news-bubble-title").addClass("news-bubble-title-white");
@@ -175,6 +175,12 @@ $("#mission-click").click(function() {
 $("#problem-click").click(function() {
     $("html, body").animate({
         scrollTop: $("#problem").offset().top
+    });
+});
+
+$("#tech-click").click(function() {
+    $("html, body").animate({
+        scrollTop: $("#tech").offset().top
     });
 });
 
