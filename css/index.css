@@ -258,6 +258,8 @@ html, body {
     font-size:.7em;
     position: relative;
     top:15%;
+    margin-right: 12%;
+    margin-left: 12%; 
 }
 .pane-title {
     position: relative;
@@ -305,13 +307,13 @@ html, body {
 .dashed-border::after {
    right: -3px;
    height: 3px;
-   background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #1e5799), color-stop(50%, #2989d8), color-stop(51%, #207cca), color-stop(100%, #7db9e8));
-   background-image: -webkit-linear-gradient(left, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
-   background-image: -moz-linear-gradient(left, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
-   background-image: -o-linear-gradient(left, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
-   background-image: -ms-linear-gradient(left, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+   background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #ffffff), color-stop(50%, #2d4675), color-stop(51%, #2d4675), color-stop(90%, #ffffff));
+   background-image: -webkit-linear-gradient(left, #ffffff 10%, #2d4675 50%, #2d4675 51%, #ffffff 90%);
+   background-image: -moz-linear-gradient(left, #ffffff 10%, #2d4675 50%, #2d4675 51%, #ffffff 90%);
+   background-image: -o-linear-gradient(left, #ffffff 10%, #2d4675 50%, #2d4675 51%, #ffffff 90%);
+   background-image: -ms-linear-gradient(left, #ffffff 10%, #2d4675 50%, #2d4675 51%, #ffffff 90%);
 /* IE10+ */
-   background-image: linear-gradient(to right, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+   background-image: linear-gradient(to right, #ffffff 10%, #2d4675 50%, #2d4675 51%, #ffffff 90%);
 /* W3C */
   }
 
