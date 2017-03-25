@@ -282,14 +282,12 @@ html, body {
 
 .dashed-border {
   position: relative;
-  border-bottom: 3px dashed #fff;
   top:12%;
 }
 
 
 .dashed-border::before {
   content:"";
-  border-top:3px dashed #FFF;
   position: absolute;
   top:0;
   left:6px;
