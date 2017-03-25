@@ -238,6 +238,7 @@ html, body {
     overflow: hidden;
 }
 
+
 #home, #mission, #problem, #solution, #team, #contact {
     height: 100%;
 }
@@ -253,6 +254,11 @@ html, body {
     top: 50%;
 }
 
+.em-paragraph {
+    font-size:.7em;
+    position: relative;
+    top:15%;
+}
 .pane-title {
     position: relative;
     width: 100%;
@@ -261,6 +267,53 @@ html, body {
     margin-bottom: 10px;
     font-weight: 100;
 }
+
+.em-pane-title {
+    font-size: 2em;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: calc(50% - 250px);
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+
+.dashed-border {
+  position: relative;
+  border-bottom: 3px dashed #fff;
+  top:12%;
+}
+
+
+.dashed-border::before {
+  content:"";
+  border-top:3px dashed #FFF;
+  position: absolute;
+  top:0;
+  left:6px;
+  right:0;
+  width: 100%;
+  height: 3px;
+  z-index: 2;
+}
+.dashed-border:after {
+   content:"";
+   position: absolute;
+   bottom: -3px;
+   left: -3px;
+ }
+.dashed-border::after {
+   right: -3px;
+   height: 3px;
+   background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #1e5799), color-stop(50%, #2989d8), color-stop(51%, #207cca), color-stop(100%, #7db9e8));
+   background-image: -webkit-linear-gradient(left, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+   background-image: -moz-linear-gradient(left, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+   background-image: -o-linear-gradient(left, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+   background-image: -ms-linear-gradient(left, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+/* IE10+ */
+   background-image: linear-gradient(to right, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+/* W3C */
+  }
 
 /* END HERE */
 
