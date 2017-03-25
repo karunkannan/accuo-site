@@ -195,7 +195,7 @@ html, body {
 }
 
 .bubble-title {
-    posih2tion: absolute;
+    position: absolute;
     right: 20px;
     width: 125px;
     top: 2.5px;
@@ -226,13 +226,13 @@ html, body {
 }
 
 /* EMILY START HERE */
-
-h1 {
+h2 {
     color: #2d4675;
     text-align: center;
 }
 
-.pane {
+.pane {   
+    top: 50%;
     position: relative;
     width: 100%;
     background-color: white;
@@ -255,7 +255,10 @@ h1 {
 
 .paragraph {
     position: relative;
-    top: 50%;
+    font-size: .73em;
+    top: 5%;
+    margin-right: 15%;
+    margin-left:15%;
 }
 
 .pane-title {
@@ -265,6 +268,7 @@ h1 {
     top: calc(50% - 250px);
     margin-bottom: 10px;
     font-weight: 100;
+
 }
 
 /* END HERE */
