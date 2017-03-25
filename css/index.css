@@ -226,13 +226,8 @@ html, body {
 }
 
 /* EMILY START HERE */
-h2 {
-    color: #2d4675;
-    text-align: center;
-}
 
 .pane {
-    top: 0px;
     position: relative;
     width: 100%;
     background-color: white;
@@ -255,20 +250,7 @@ h2 {
 
 .paragraph {
     position: relative;
-    font-size: .73em;
-    top: 5%;
-    margin-right: 15%;
-    margin-left:15%;
-}
-
-.pane-title {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    top: calc(50% - 250px);
-    margin-bottom: 10px;
-    font-weight: 100;
-
+    top: 50%;
 }
 
 .pane-title {
@@ -297,7 +279,7 @@ h2 {
 .article:hover {
     box-shadow: 10px 10px 0px #7396DC;
 }
- 
+
 .article-active {
     height: auto;
 }
@@ -400,11 +382,6 @@ h2 {
     cursor: hand; 
 }
 
-.article > .popout > .exit-active {
-    margin-right: 20px;
-    height: 20px;
-}
-
 .article > .popout > .exit > .exit-hr {
     background-color: white;
     height: 1px;
@@ -432,7 +409,6 @@ h2 {
     color: #777;
     height: 0px;
     padding-bottom: 0px;
-    overflow: scroll;
 }
 
 .pure-form {
@@ -645,10 +621,6 @@ textarea:focus, input:focus {
         width: calc(100% - 55px);
     }
     
-    .article:hover {
-        box-shadow: 5px 5px 0px #7396DC;
-    }
-    
     .article > .popout > .link {
         margin-right: 20px;
     }
@@ -665,23 +637,5 @@ textarea:focus, input:focus {
     .pure-group > input, .pure-group > textarea {
         left: 0%;
         width: calc(100% - 0px);
-    }
-    
-    #contact {
-        height: auto;
-    }
-    
-    .pure-form {
-        position: relative;
-        top: 0px;
-    }
-    
-    #gform > button {
-        margin-bottom: 100px;
-    }
-    
-    .contact-title {
-        margin-bottom: 100px;
-        top: 75px;
     }
 }
