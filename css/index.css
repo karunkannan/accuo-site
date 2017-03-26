@@ -239,7 +239,18 @@ html, body {
 }
 
 
-#home, #mission, #problem, #tech, #solution, #team, #contact {
+.team-pane {
+    position: relative;
+    width: 80%;
+    background-color: white;
+    color: #2D4675;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+
+#home, #mission, #problem, #solution, #contact {
     height: 100%;
 }
 
@@ -260,6 +271,16 @@ html, body {
     top:15%;
     margin-right: 12%;
     margin-left: 12%; 
+}
+
+.em-tparagraph {
+    font-size:.7em;
+    position: relative;
+    top:15%;
+    margin-left:15%;
+    margin-right:15%;
+    margin-bottom:2.5%;
+
 }
 .pane-title {
     position: relative;
@@ -332,6 +353,74 @@ html, body {
     font-size: 18px;
     margin: 0px 12.5%;
     margin-top:14%;
+}
+
+.rift { 
+  width: 250px; /* Define width */
+  height: 250px; /* Define height */
+  position: relative; 
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+.rift img { 
+  width: 100%; 
+  height: auto; 
+  -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.rift .caption { 
+  position: absolute; 
+  top: 50%;
+  width: 100%;
+  height: 50px; /* Define caption height */
+  line-height: 50px; /* Define matched line-height */
+  margin: -30px 0 0 0; /* Half caption height */
+  text-align: center; 
+  z-index: 0;
+  font-family: sans-serif;
+  font-size: 30px;
+font-weight: 200;
+
+
+}
+
+.rift span[class*="span"] {
+  display: block;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  transform: translate3d(0,0,0); /* Acceleration FTW */
+  transition: transform .25s; /* Define anim. speed */
+}
+
+.rift span.top-span { top: 0; }
+.rift span.btm-span { bottom: 0; }
+
+.rift:hover span.top-span { 
+  transform: translate(0,-150px); /* Half caption height */
+}
+
+.rift:hover > span.btm-span { 
+  transform: translate(0,150px); /* Half caption height */
+}
+
+/* Non-plugin styles */
+
+
+.rift { 
+  display: inline-block;
+  cursor: pointer;
+  margin: 20px 0 0 20px; 
+}
+
+.rift .caption { 
+  color: #2d4675;
+  background: rgba(255, 255, 254, 50);
 }
 
 /* END HERE */
