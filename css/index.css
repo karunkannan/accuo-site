@@ -211,11 +211,15 @@ html, body {
     border-radius: 20px;
 }
 
+.team-bubble-title {
+    width: 80px;
+}
+
 .news-bubble-title {
     width: 50px;
 }
 
-.news-bubble-title-white {
+.team-bubble-title-white, .news-bubble-title-white {
     color: white;
     background-color: #2D4675;
 }
@@ -253,7 +257,7 @@ html, body {
     height: 100%;
 }
 
-#news {
+#team, #news {
     padding-top: 75px;
     padding-bottom: 75px;
     background-color: #2D4675;
@@ -334,6 +338,10 @@ html, body {
     color: rgba(45,70,117, 0.75);
 }
 
+.em-pane-title-white {
+    color: rgba(255, 255, 255, 0.75);
+}
+
 .dashed-border {
     position: relative;
     top: 12%;
@@ -369,6 +377,17 @@ html, body {
     background-image: linear-gradient(to right, rgba(0,0,0,0) 10%, rgba(45,70,117, 0.5) 50%, rgba(45,70,117, 0.5) 51%, rgba(0,0,0,0) 90%);
 }
 
+.dashed-border-white::after {
+    right: -3px;
+    height: 3px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(0,0,0,0)), color-stop(50%, #2d4675), color-stop(51%, #2d4675), color-stop(90%, rgba(0,0,0,0)));
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 10%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75) 51%, rgba(0,0,0,0) 90%);
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0) 10%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75) 51%, rgba(0,0,0,0) 90%);
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0) 10%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75) 51%, rgba(0,0,0,0) 90%);
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0) 10%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75) 51%, rgba(0,0,0,0) 90%);
+    background-image: linear-gradient(to right, rgba(0,0,0,0) 10%, rgba(255, 255, 255, 0.75) 50%, rgba(255, 255, 255, 0.75) 51%, rgba(0,0,0,0) 90%);
+}
+
 .soln-icon {
     position: relative;
     width: 90%;
@@ -389,73 +408,79 @@ html, body {
     margin-top:14%;
 }
 
-.rift { 
-  width: 250px; /* Define width */
-  height: 250px; /* Define height */
-  position: relative; 
-  overflow: hidden;
-  backface-visibility: hidden;
+.team-image-cont {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
 }
 
-.rift img { 
-  width: 100%; 
-  height: auto; 
-  -webkit-filter: blur(5px);
-    filter: blur(5px);
+.team-image {
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
-.rift .caption { 
-  position: absolute; 
-  top: 50%;
-  width: 100%;
-  height: 50px; /* Define caption height */
-  line-height: 50px; /* Define matched line-height */
-  margin: -30px 0 0 0; /* Half caption height */
-  text-align: center; 
-  z-index: 0;
-  font-family: sans-serif;
-  font-size: 30px;
-font-weight: 200;
-
-
+.team-panel {
+    position: absolute;
+    top: -135%;
+    left: -95%;
+    width: 100%;
+    height: 200%;
+    background-color: white;
+    
+    -ms-transform: rotate(45deg); 
+    -webkit-transform: rotate(45deg); 
+    transform: rotate(45deg);
 }
 
-.rift span[class*="span"] {
-  display: block;
-  width: 100%;
-  height: 50%;
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  z-index: 1;
-  transform: translate3d(0,0,0); /* Acceleration FTW */
-  transition: transform .25s; /* Define anim. speed */
+.panel-right {
+    top: 55%;
+    left: 70%;
 }
 
-.rift span.top-span { top: 0; }
-.rift span.btm-span { bottom: 0; }
-
-.rift:hover span.top-span { 
-  transform: translate(0,-150px); /* Half caption height */
+.panel-move-left {
+    left: -40%;
+    top: -80%;
 }
 
-.rift:hover > span.btm-span { 
-  transform: translate(0,150px); /* Half caption height */
+.panel-move-right {
+    left: 20%;
+    top: 0%;
 }
 
-/* Non-plugin styles */
-
-
-.rift { 
-  display: inline-block;
-  cursor: pointer;
-  margin: 20px 0 0 20px; 
+.team-panel-overlay {
+    position: absolute;
+    width: calc(100% - 30px);
+    top: -50%;
+    left: -50%;
+    font-size: 2em;
+    text-align: left;
+    padding: 15px;
+    padding-top: 10px;
 }
 
-.rift .caption { 
-  color: #2d4675;
-  background: rgba(255, 255, 254, 50);
+.panel-overlay-right {
+    top: auto;
+    left: auto;
+    right: -100%;
+    bottom: -100%;
+    width: calc(75% - 15px);
+    display: table-cell;
+    font-size: 1em;
+    text-align: right;
 }
+
+.panel-overlay-move-left {
+    top: 0%;
+    left: 0%;
+}
+
+.panel-overlay-move-right {
+    right: 0%;
+    bottom: 0%;
+}
+
 
 /* END HERE */
 

@@ -144,14 +144,21 @@ function scrollEvent() {
         }, 3000);
         currentPane = pane;
         
-        if (currentPane == 6) {
+        if (currentPane == 5) {
             $(".bubble").addClass("bubble-white");
-            $(".big-bubble").addClass("big-bubble-white");
+            $(".bubble").removeClass("big-bubble-white");
+            $(".bubble").eq(currentPane).addClass("big-bubble-white");
+            $(".team-bubble-title").addClass("team-bubble-title-white");
+        } else if (currentPane == 6) {
+            $(".bubble").addClass("bubble-white");
+            $(".bubble").removeClass("big-bubble-white");
+            $(".bubble").eq(currentPane).addClass("big-bubble-white");
             $(".news-bubble-title").addClass("news-bubble-title-white");
         } else {
             $(".bubble").removeClass("bubble-white");
-            $(".big-bubble").removeClass("big-bubble-white");
+            $(".bubble").removeClass("big-bubble-white");
             $(".news-bubble-title").removeClass("news-bubble-title-white");
+            $(".team-bubble-title").removeClass("team-bubble-title-white");
         }
     }
 }
@@ -272,4 +279,16 @@ function removePopup(article) {
 $(".exit").click(function() {
     console.log("lol");
     removePopup($(this).parent().parent());
+});
+
+$(".team-image-cont").hover(function() {
+    $(this).children(".panel-left").addClass("panel-move-left");
+    $(this).children(".panel-right").addClass("panel-move-right");
+    $(this).children(".panel-overlay-left").addClass("panel-overlay-move-left");
+    $(this).children(".panel-overlay-right").addClass("panel-overlay-move-right");
+}, function() {
+    $(this).children(".panel-left").removeClass("panel-move-left");
+    $(this).children(".panel-right").removeClass("panel-move-right");
+    $(this).children(".panel-overlay-left").removeClass("panel-overlay-move-left");
+    $(this).children(".panel-overlay-right").removeClass("panel-overlay-move-right");
 });
