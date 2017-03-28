@@ -255,12 +255,43 @@ html, body {
 }
 
 .em-paragraph {
-    font-size:.7em;
+    font-size: .7em;
     position: relative;
-    top:15%;
+    top: 15%;
     margin-right: 12%;
     margin-left: 12%; 
+    font-weight: 100;
 }
+
+.em-paragraph-mission {
+    top: calc(50% - 175px);
+    font-size: 0.9em;
+    line-height: 200%;
+    color: rgba(45,70,117, 0.7);
+    margin: 0px 15%;
+}
+
+.giant-quotes {
+    font-family: "Times New Roman", Times, serif;
+    position: absolute;
+    top: calc(50% - 300px);
+    left: 75%;
+    font-size: 15em;
+    color: rgba(45,70,117, 0.25);
+    letter-spacing: -15px;
+}
+
+.giant-quotes-inverted {
+    -moz-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -ms-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+    
+    top: calc(50% - 200px);
+    left: calc(25% - 210px);
+}
+
 .pane-title {
     position: relative;
     width: 100%;
@@ -272,17 +303,21 @@ html, body {
 
 .em-pane-title {
     font-size: 2em;
+    font-weight: 100;
     position: relative;
     width: 100%;
-    text-align: center;
-    top: calc(50% - 250px);
+    text-align: left;
+    top: calc(12% + 10px);
+    left: 25px;
     margin-bottom: 10px;
     font-weight: 100;
+    color: rgba(45,70,117, 0.75);
 }
 
 .dashed-border {
     position: relative;
-    top:12%;
+    top: 12%;
+    left: -50%;
 }
 
 .dashed-border::before {
@@ -307,11 +342,11 @@ html, body {
     right: -3px;
     height: 3px;
     background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(0,0,0,0)), color-stop(50%, #2d4675), color-stop(51%, #2d4675), color-stop(90%, rgba(0,0,0,0)));
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 10%, #2d4675 50%, #2d4675 51%, rgba(0,0,0,0) 90%);
-    background-image: -moz-linear-gradient(left, rgba(0,0,0,0) 10%, #2d4675 50%, #2d4675 51%, rgba(0,0,0,0) 90%);
-    background-image: -o-linear-gradient(left, rgba(0,0,0,0) 10%, #2d4675 50%, #2d4675 51%, rgba(0,0,0,0) 90%);
-    background-image: -ms-linear-gradient(left, rgba(0,0,0,0) 10%, #2d4675 50%, #2d4675 51%, rgba(0,0,0,0) 90%);
-    background-image: linear-gradient(to right, rgba(0,0,0,0) 10%, #2d4675 50%, #2d4675 51%, rgba(0,0,0,0) 90%);
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 10%, rgba(45,70,117, 0.5) 50%, rgba(45,70,117, 0.5) 51%, rgba(0,0,0,0) 90%);
+    background-image: -moz-linear-gradient(left, rgba(0,0,0,0) 10%, rgba(45,70,117, 0.5) 50%, rgba(45,70,117, 0.5) 51%, rgba(0,0,0,0) 90%);
+    background-image: -o-linear-gradient(left, rgba(0,0,0,0) 10%, rgba(45,70,117, 0.5) 50%, rgba(45,70,117, 0.5) 51%, rgba(0,0,0,0) 90%);
+    background-image: -ms-linear-gradient(left, rgba(0,0,0,0) 10%, rgba(45,70,117, 0.5) 50%, rgba(45,70,117, 0.5) 51%, rgba(0,0,0,0) 90%);
+    background-image: linear-gradient(to right, rgba(0,0,0,0) 10%, rgba(45,70,117, 0.5) 50%, rgba(45,70,117, 0.5) 51%, rgba(0,0,0,0) 90%);
 }
 
 .soln-icon {
@@ -346,6 +381,7 @@ html, body {
     margin: 25px;
     padding-bottom: 0px;
     float: left;
+    position: relative;
 }
 
 .article:hover {
@@ -687,6 +723,41 @@ textarea:focus, input:focus {
     .sidebar {
         height: 0px;
         overflow: hidden;
+    }
+    
+    #home, #mission, #problem, #tech, #solution, #team, #contact {
+        height: auto;
+    }
+    
+    .em-pane-title {
+        top: 75px;
+        left: 0px;
+        font-size: 1.5em;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .dashed-border {
+        left: 0px;
+        top: 75px;
+    }
+    
+    .em-paragraph-mission {
+        line-height: 150%;
+        top: 125px;
+        font-size: 0.8em;
+        padding-bottom: 150px;
+        margin: 0px 5%;
+    }
+    
+    .giant-quotes {
+        left: 60%;
+        top: calc(50% - 250px);
+    }
+    
+    .giant-quotes-inverted {
+        left: calc(40% - 210px);
+        top: calc(50% - 150px);
     }
     
     .article {
