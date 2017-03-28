@@ -278,13 +278,12 @@ html, body {
 }
 
 .em-tparagraph {
+    padding-top: 75px;
+    padding-bottom: 75px;
     font-size:.7em;
     position: relative;
-    top:15%;
-    margin-left:15%;
-    margin-right:15%;
-    margin-bottom:2.5%;
-
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .em-paragraph-mission {
@@ -413,6 +412,9 @@ html, body {
     width: 400px;
     height: 400px;
     overflow: hidden;
+    float: left;
+    padding: 0px;
+    margin: 0px;
 }
 
 .team-image {
