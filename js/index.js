@@ -4,34 +4,33 @@ var loadingTimer = null;
 var loadingTime = 0;
 
 // emily stuff, thanks 2 the internet for this i love u internet
-    (function ( $, window, document, undefined ) {
+(function ( $, window, document, undefined ) {
 
-      $.fn.rift = function () {
+  $.fn.rift = function () {
 
-        return this.each(function () {
-          
-          // Vurribles
-          var element = $(this),
-              elemImg = element.find('img'),
-              imgSrc  = elemImg.attr('src');
-      
-          // We be chainin'  
-          element
-            .prepend('<span class="top-span"></span>')
-            .append('<span class="btm-span"></span>')
-            .find('span.top-span')
-            .css('background', 'url(' + imgSrc + ') no-repeat center top')
-            .css('background-size', '100%')
-            .parent()
-            .find('span.btm-span')
-            .css('background', 'url(' + imgSrc + ') no-repeat center bottom')
-            .css('background-size', '100%');
-        });
-      };
-    })( jQuery, window, document );
+    return this.each(function () {
 
-    $('.rift').rift();
+      // Vurribles
+      var element = $(this),
+          elemImg = element.find('img'),
+          imgSrc  = elemImg.attr('src');
 
+      // We be chainin'  
+      element
+        .prepend('<span class="top-span"></span>')
+        .append('<span class="btm-span"></span>')
+        .find('span.top-span')
+        .css('background', 'url(' + imgSrc + ') no-repeat center top')
+        .css('background-size', '100%')
+        .parent()
+        .find('span.btm-span')
+        .css('background', 'url(' + imgSrc + ') no-repeat center bottom')
+        .css('background-size', '100%');
+    });
+  };
+})( jQuery, window, document );
+
+$('.rift').rift();
 
 function removeHamburger() {
     $("#ham1").removeClass("ham1-clicked");
@@ -274,4 +273,3 @@ $(".exit").click(function() {
     console.log("lol");
     removePopup($(this).parent().parent());
 });
-

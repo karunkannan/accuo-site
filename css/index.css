@@ -238,7 +238,6 @@ html, body {
     overflow: hidden;
 }
 
-
 .team-pane {
     position: relative;
     width: 80%;
@@ -250,7 +249,7 @@ html, body {
 }
 
 
-#home, #mission, #solution, #contact {
+#home, #mission, #problem, #tech, #solution, #team, #contact {
     height: 100%;
 }
 
@@ -272,6 +271,16 @@ html, body {
     margin-right: 12%;
     margin-left: 12%; 
     font-weight: 100;
+}
+
+.em-tparagraph {
+    font-size:.7em;
+    position: relative;
+    top:15%;
+    margin-left:15%;
+    margin-right:15%;
+    margin-bottom:2.5%;
+
 }
 
 .em-paragraph-mission {
@@ -303,18 +312,6 @@ html, body {
     left: calc(25% - 210px);
 }
 
-<<<<<<< HEAD
-=======
-.em-tparagraph {
-    font-size:.7em;
-    position: relative;
-    top:15%;
-    margin-left:15%;
-    margin-right:15%;
-    margin-bottom:2.5%;
-
-}
->>>>>>> 5eaeadc1630929e18561183c4e3567d2aff9b3d0
 .pane-title {
     position: relative;
     width: 100%;
