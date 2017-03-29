@@ -862,12 +862,12 @@ textarea:focus, input:focus {
     }
     
     .panel-overlay-left {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     
     .panel-overlay-right {
         font-size: 0.65em;
-        width: 75%;
+        width: calc(100% - 30px);
     }
 }
 
