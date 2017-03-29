@@ -145,9 +145,8 @@ function scrollEvent() {
         currentPane = pane;
         
         if (currentPane == 5) {
-            $(".bubble").addClass("bubble-white");
+            $(".bubble").removeClass("bubble-white");
             $(".bubble").removeClass("big-bubble-white");
-            $(".bubble").eq(currentPane).addClass("big-bubble-white");
             $(".team-bubble-title").addClass("team-bubble-title-white");
         } else if (currentPane == 6) {
             $(".bubble").addClass("bubble-white");
@@ -286,9 +285,13 @@ $(".team-image-cont").hover(function() {
     $(this).children(".panel-right").addClass("panel-move-right");
     $(this).children(".panel-overlay-left").addClass("panel-overlay-move-left");
     $(this).children(".panel-overlay-right").addClass("panel-overlay-move-right");
+    $(this).children(".panel-border-left").addClass("panel-border-move-left");
+    $(this).children(".panel-border-right").addClass("panel-border-move-right");
 }, function() {
     $(this).children(".panel-left").removeClass("panel-move-left");
     $(this).children(".panel-right").removeClass("panel-move-right");
     $(this).children(".panel-overlay-left").removeClass("panel-overlay-move-left");
     $(this).children(".panel-overlay-right").removeClass("panel-overlay-move-right");
+    $(this).children(".panel-border-left").removeClass("panel-border-move-left");
+    $(this).children(".panel-border-right").removeClass("panel-border-move-right");
 });

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: raleway-thin;
+    src: url(Raleway-Light.ttf);
+}
+
 html, body {
     margin: 0px;
     padding: 0px;
@@ -224,6 +229,11 @@ html, body {
     background-color: #2D4675;
 }
 
+.team-bubble-title-white {
+    color: #2D4675;
+    background-color: white;
+}
+
 .bubble-title-show {
     opacity: 1;
     right: 20px;
@@ -263,6 +273,10 @@ html, body {
     background-color: #2D4675;
 }
 
+#team {
+    background-color: white;
+}
+
 #news {
     padding-top: 175px;
 }
@@ -282,12 +296,11 @@ html, body {
 }
 
 .em-tparagraph {
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     font-size:.7em;
     position: relative;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: calc(50% - 600px - 30px);
 }
 
 .em-paragraph-mission {
@@ -330,7 +343,6 @@ html, body {
 
 .em-pane-title {
     font-size: 2em;
-    font-weight: 100;
     position: relative;
     width: 100%;
     text-align: left;
@@ -339,6 +351,7 @@ html, body {
     margin-bottom: 10px;
     font-weight: 100;
     color: rgba(45,70,117, 0.75);
+    font-family: raleway-thin;
 }
 
 #news > .em-pane-title {
@@ -375,7 +388,7 @@ html, body {
 
 .dashed-border::after {
     right: -3px;
-    height: 3px;
+    height: 2px;
     background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(0,0,0,0)), color-stop(50%, #2d4675), color-stop(51%, #2d4675), color-stop(90%, rgba(0,0,0,0)));
     background-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 10%, rgba(45,70,117, 0.5) 50%, rgba(45,70,117, 0.5) 51%, rgba(45,70,117,0) 90%);
     background-image: -moz-linear-gradient(left, rgba(0,0,0,0) 10%, rgba(45,70,117, 0.5) 50%, rgba(45,70,117, 0.5) 51%, rgba(45,70,117,0) 90%);
@@ -427,6 +440,7 @@ html, body {
     float: left;
     padding: 0px;
     margin: 0px;
+    margin: 10px;
 }
 
 .team-image {
@@ -442,7 +456,7 @@ html, body {
     width: 100%;
     height: 200%;
     background-color: white;
-    
+        
     -ms-transform: rotate(45deg); 
     -webkit-transform: rotate(45deg); 
     transform: rotate(45deg);
@@ -483,6 +497,7 @@ html, body {
     display: table-cell;
     font-size: 1em;
     text-align: right;
+    color: #777;
 }
 
 .panel-overlay-move-left {
@@ -493,6 +508,32 @@ html, body {
 .panel-overlay-move-right {
     right: 0%;
     bottom: 0%;
+}
+
+.team-panel-border {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: calc(100% - 17px);
+    height: calc(100% - 17px);
+    border-left: 2px solid rgba(45,70,117, 0.5);
+    border-top: 2px solid rgba(45,70,117, 0.5);
+}
+
+.panel-border-right {
+    top: 50%;
+    left: 50%;
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    border-left: none;
+    border-top: none;
+    border-right: 2px solid rgba(45,70,117, 0.5);
+    border-bottom: 2px solid rgba(45,70,117, 0.5);
+}
+
+.panel-border-move-left, .panel-border-move-right {
+    top: 7px;
+    left: 7px;
 }
 
 
@@ -777,9 +818,36 @@ textarea:focus, input:focus {
     outline: none;
 }
 
+@media screen and (max-width: 1280px) { 
+    .em-tparagraph {
+        margin-left: calc(50% - 525px - 30px);
+    }
+    
+    .team-image-cont {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .panel-overlay-right {
+        font-size: 0.85em;   
+    }
+}
+
+@media screen and (max-width: 1110px) {    
+    .em-tparagraph {
+        margin-left: calc(50% - 350px - 20px);
+    }
+}
+
 @media screen and (max-width: 1000px) { 
     .article {
         width: calc(50% - 63px);
+    }
+}
+
+@media screen and (max-width: 740px) {    
+    .em-tparagraph {
+        margin-left: calc(50% - 175px - 10px);
     }
 }
 
@@ -864,9 +932,17 @@ textarea:focus, input:focus {
         width: 100%;
     }
     
+    .news-title {
+         top: 0px;   
+    }
+    
     .dashed-border {
         left: 0px;
         top: 75px;
+    }
+    
+    .news-dashed-border {
+         top: 0px;   
     }
     
     .em-paragraph-mission {
