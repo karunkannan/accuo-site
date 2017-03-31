@@ -263,17 +263,17 @@ html, body {
 }
 
 
-#home, #mission, #problem, #tech, #solution, #contact {
+#home, #mission, #problem, #solution, #contact {
     height: 100%;
 }
 
-#team, #news {
+#tech, #team, #news {
     padding-top: 75px;
     padding-bottom: 75px;
     background-color: #2D4675;
 }
 
-#team {
+#tech, #team {
     background-color: white;
 }
 
@@ -293,6 +293,26 @@ html, body {
     margin-right: 12%;
     margin-left: 12%; 
     font-weight: 100;
+    color: rgba(45,70,117, 0.7);
+}
+
+#tech > .em-paragraph {
+    padding-top: 25px;
+}
+
+.tech-image {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: auto;
+}
+
+.tech-info {
+    float: left;
+    position: relative;
+    width: 50%;
+    line-height: 125%;
+    text-align: left;
 }
 
 .em-tparagraph {
@@ -986,6 +1006,18 @@ textarea:focus, input:focus {
     .giant-quotes-inverted {
         left: calc(40% - 210px);
         top: calc(50% - 150px);
+    }
+    
+    #tech > .em-paragraph {
+        padding-top: 100px;
+    }
+    
+    .tech-image {
+        width: 100%;
+    }
+    
+    .tech-info {
+        width: 100%;
     }
     
     .article {
