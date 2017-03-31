@@ -993,18 +993,18 @@ textarea:focus, input:focus {
     .em-paragraph-mission {
         line-height: 150%;
         top: 125px;
-        font-size: 0.8em;
+        font-size: 0.6em;
         padding-bottom: 150px;
         margin: 0px 5%;
     }
     
     .giant-quotes {
-        left: 60%;
-        top: calc(50% - 250px);
+        left: 40%;
+        top: calc(50% - 300px);
     }
     
     .giant-quotes-inverted {
-        left: calc(40% - 210px);
+        left: calc(60% - 210px);
         top: calc(50% - 150px);
     }
     
@@ -1018,6 +1018,11 @@ textarea:focus, input:focus {
     
     .tech-info {
         width: 100%;
+        font-size: 0.75em;
+    }
+    
+    .panel-left {
+        background-color: white;
     }
     
     .article {
