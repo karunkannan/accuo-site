@@ -263,7 +263,7 @@ html, body {
 }
 
 
-#home, #mission, #problem, #solution, #contact {
+#home, #mission, #solution, #contact {
     height: 100%;
 }
 
@@ -988,6 +988,10 @@ textarea:focus, input:focus {
         top: calc(50% - 150px);
     }
     
+    #problem > .em-paragraph {
+        padding-top: 150px;
+    }
+
     #tech > .em-paragraph {
         padding-top: 100px;
     }
