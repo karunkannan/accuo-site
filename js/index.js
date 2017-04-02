@@ -160,6 +160,11 @@ function scrollEvent() {
             $(".team-bubble-title").removeClass("team-bubble-title-white");
         }
     }
+    
+    if (pane == 3) { 
+        var tool_scroll = (scroll - $("#tech").position().top)/8;
+        $(".tech-image-tool").css("top", tool_scroll);  
+    }
 }
 
 $("input").focusin(function() {

@@ -304,6 +304,16 @@ html, body {
     position: relative;
     float: left;
     width: 50%;
+    top: 50px;
+    height: auto;
+}
+
+.tech-image-tool {
+    position: absolute;
+    float: left;
+    left: calc(17%);
+    top: 10px;
+    width: 15%;
     height: auto;
 }
 
