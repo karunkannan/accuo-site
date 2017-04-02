@@ -161,7 +161,7 @@ function scrollEvent() {
         }
     }
     
-    if (pane == 3) { 
+    if (pane == 3 && window.innerWidth > 700) { 
         var tool_scroll = (scroll - $("#tech").position().top)/8;
         $(".tech-image-tool").css("top", tool_scroll);  
     }

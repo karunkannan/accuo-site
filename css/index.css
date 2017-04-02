@@ -301,6 +301,7 @@ html, body {
 }
 
 .tech-image {
+    z-index: 1;
     position: relative;
     float: left;
     width: 50%;
@@ -309,6 +310,7 @@ html, body {
 }
 
 .tech-image-tool {
+    z-index: 2;
     position: absolute;
     float: left;
     left: calc(17%);
@@ -382,6 +384,7 @@ html, body {
     font-weight: 100;
     color: rgba(45,70,117, 0.75);
     font-family: raleway-thin;
+    z-index: 5;
 }
 
 #news > .em-pane-title {
@@ -419,6 +422,7 @@ html, body {
 .dashed-border::after {
     right: -3px;
     height: 2px;
+    z-index: 5;
     background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(45,70,117,0)), color-stop(50%, #2d4675), color-stop(51%, #2d4675), color-stop(90%, rgba(45,70,117,0)));
     background-image: -webkit-linear-gradient(left, rgba(45,70,117,0) 10%, rgba(45,70,117, 0.5) 50%, rgba(45,70,117, 0.5) 51%, rgba(45,70,117,0) 90%);
     background-image: -moz-linear-gradient(left, rgba(45,70,117,0) 10%, rgba(45,70,117, 0.5) 50%, rgba(45,70,117, 0.5) 51%, rgba(45,70,117,0) 90%);
@@ -1008,11 +1012,23 @@ textarea:focus, input:focus {
     
     .tech-image {
         width: 100%;
+        margin-top: -60%;
+        margin-bottom: 15%;
+        height: auto;
+    }
+
+    .tech-image-tool {
+        position: relative;
+        left: 37.5%;
+        top: 0%;
+        width: 25%;
+        height: auto;
     }
     
     .tech-info {
         width: 100%;
         font-size: 0.75em;
+        z-index: 4;
     }
         
     .article {
