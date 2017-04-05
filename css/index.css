@@ -280,6 +280,10 @@ html, body {
     background-color: #2D4675;
 }
 
+#news {
+    padding-top: 100px;
+}
+
 #problem {
     background-color: #EEE;
 }
