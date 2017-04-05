@@ -278,17 +278,18 @@ html, body {
     background-color: #2D4675;
 }
 
+#news {
+    padding: 100px;
+}
+
 #problem {
-    background-color: #DDD;
+    background-color: #EEE;
 }
 
 #tech, #team {
     background-color: white;
 }
 
-#news {
-    padding-top: 175px;
-}
 
 .paragraph {
     position: relative;
@@ -360,7 +361,7 @@ html, body {
 }
 
 .em-paragraph-mission {
-    top: calc(50% - 175px);
+    top: calc(50% - 325px);
     font-size: 0.9em;
     line-height: 200%;
     color: rgba(45,70,117, 0.7);
@@ -373,7 +374,7 @@ html, body {
     top: calc(50% - 300px);
     left: 75%;
     font-size: 15em;
-    color: rgba(45,70,117, 0.25);
+    color: #EEE;
     letter-spacing: -15px;
 }
 
@@ -394,7 +395,11 @@ html, body {
     text-align: center;
     top: calc(50% - 250px);
     margin-bottom: 10px;
-    font-weight: 100;
+    font-weight: 900;
+    font-size: 0.5em;
+    letter-spacing: 3px;
+    color: rgba(45,70,117, 0.75);
+    font-family: raleway-light;
 }
 
 .em-pane-title {
@@ -412,6 +417,19 @@ html, body {
     color: #AAA;
 }
 
+.em-pane-title-centered {
+    text-align: center;
+    width: calc(100% - 550px);
+}
+
+.black-divider {
+    color: rgba(45,70,117, 1);
+}
+
+.gray-divider {
+    color: #AAA;
+}
+
 .title-right {
     left: 50%;
 }
@@ -424,8 +442,12 @@ html, body {
     margin-top: calc(50% - 550px);
 }
 
+#team > .em-pane-title{
+    margin-top: 30px;
+}
+
 #news > .em-pane-title {
-    top: -100px;
+    margin-top: 0px;
 }
 
 .em-pane-title-white {
@@ -475,13 +497,14 @@ html, body {
 
 .team-image-cont {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
     float: left;
     padding: 0px;
-    margin: 0px;
-    margin: 10px;
+    margin: 60px;
+    margin-top: 0px;
+    margin-bottom: 120px;
     box-shadow: 0px 0px 2px black;
 }
 
@@ -515,13 +538,13 @@ html, body {
 }
 
 .panel-move-left {
-    left: -57%;
-    top: -97%;
+    top: -80%;
+    left: -40%;
 }
 
 .panel-move-right {
-    left: 3%;
-    top: -17%;
+    top: 0%;
+    left: 20%;
 }
 
 .team-panel-overlay {
@@ -529,11 +552,10 @@ html, body {
     width: calc(100% - 30px);
     top: -50%;
     left: -50%;
-    font-size: 2em;
+    font-size: 1.1em;
     text-align: left;
-    padding: 15px;
-    padding-top: 10px;
-    background-color: #2D4675;
+    padding: 30px;
+    padding-top: 25px;
     color: white;
 }
 
@@ -543,11 +565,11 @@ html, body {
     left: auto;
     right: -100%;
     bottom: -100%;
-    width: calc(75% - 15px);
+    width: calc(75% - 30px);
     display: table-cell;
-    font-size: 1em;
+    font-size: 0.75em;
     text-align: right;
-    color: #777;
+    color: #999;
 }
 
 .panel-overlay-move-left {
@@ -586,20 +608,17 @@ html, body {
 /* END HERE */
 
 .article {
-    width: calc(33% - 55px);
+    width: calc(50% - 400px);
     overflow: hidden;
     font-size: 0.5em;
     background-color: #FFF;
-    box-shadow: 5px 5px 0px #7396DC;
     text-align: left;
-    margin: 25px;
+    margin: 100px;
+    margin-top: 60px;
+    margin-bottom: 140px;
     padding-bottom: 0px;
     float: left;
     position: relative;
-}
-
-.article:hover {
-    box-shadow: 10px 10px 0px #7396DC;
 }
 
 .article-active {
