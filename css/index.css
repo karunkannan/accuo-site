@@ -280,10 +280,6 @@ html, body {
     background-color: #2D4675;
 }
 
-#news {
-    padding: 100px;
-}
-
 #problem {
     background-color: #EEE;
 }
@@ -407,7 +403,7 @@ html, body {
 .em-pane-title {
     font-size: 0.5em;
     position: relative;
-    width: 100%;
+    width: calc(76%);
     text-align: left;
     margin-top: calc(50% - 510px);
     left: 12%;
@@ -421,7 +417,7 @@ html, body {
 
 .em-pane-title-centered {
     text-align: center;
-    width: calc(100% - 550px);
+    width: calc(76%);
 }
 
 .black-divider {
@@ -434,6 +430,7 @@ html, body {
 
 .title-right {
     left: 50%;
+    width: calc(38%);
 }
 
 #problem > .em-pane-title {
@@ -507,11 +504,11 @@ html, body {
     margin: 60px;
     margin-top: 0px;
     margin-bottom: 120px;
-    box-shadow: 0px 0px 2px black;
+    box-shadow: 0px 0px 0px black;
 }
 
 .team-image-cont:hover {
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 1px black;
 }
 
 .team-image {
@@ -610,7 +607,42 @@ html, body {
 /* END HERE */
 
 .article {
-    width: calc(50% - 400px);
+    position: relative;
+    width: calc(76%);
+    margin: 40px 12%;
+    margin-bottom: 0px;
+    color: #DDD;
+    font-size: 0.5em;
+    font-family: "Courier New", Courier, monospace;
+    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.article > .date {
+    font-size: 0.75em;
+    color: #CCC;
+}
+
+.article > .title {
+    font-size: 1.25em;
+    color: #FFF;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.article > .body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.link:visited {
+    color: #AAA;
+}
+
+/*
+.article {
+    width: calc(50% - 300px);
     overflow: hidden;
     font-size: 0.5em;
     background-color: #FFF;
@@ -752,7 +784,7 @@ html, body {
     height: 0px;
     padding-bottom: 0px;
     overflow: scroll;
-}
+} */
 
 .pure-form {
     position: relative;
