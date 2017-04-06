@@ -527,7 +527,7 @@ html, body {
     left: -95%;
     width: 100%;
     height: 200%;
-    background-color: #2D4675;
+    background-color: rgba(45,70,117, 0.5);
         
     -ms-transform: rotate(45deg); 
     -webkit-transform: rotate(45deg); 
@@ -541,13 +541,13 @@ html, body {
 }
 
 .panel-move-left {
-    top: -80%;
-    left: -40%;
+    top: -70%;
+    left: -30%;
 }
 
 .panel-move-right {
-    top: 0%;
-    left: 20%;
+    top: 10%;
+    left: 30%;
 }
 
 .team-panel-overlay {
@@ -557,8 +557,8 @@ html, body {
     left: -50%;
     font-size: 1.1em;
     text-align: left;
-    padding: 30px;
-    padding-top: 25px;
+    padding: 20px;
+    padding-top: 15px;
     color: white;
 }
 
@@ -570,7 +570,7 @@ html, body {
     bottom: -100%;
     width: calc(75% - 30px);
     display: table-cell;
-    font-size: 0.75em;
+    font-size: 0.65em;
     text-align: right;
     color: #999;
 }
@@ -1028,11 +1028,10 @@ textarea:focus, input:focus {
     }
     
     .em-pane-title {
-        top: 75px;
         left: 0px;
-        font-size: 1.5em;
         text-align: center;
         width: 100%;
+        margin-top: 100px;
     }
     
     .news-title {
@@ -1050,7 +1049,7 @@ textarea:focus, input:focus {
     
     .em-paragraph-mission {
         line-height: 150%;
-        top: 125px;
+        top: 50px;
         font-size: 0.6em;
         padding-bottom: 150px;
         margin: 0px 5%;
@@ -1094,13 +1093,17 @@ textarea:focus, input:focus {
         font-size: 0.75em;
         z-index: 4;
     }
+    
+    .prob-video {
+        width: 100%;
+        height: auto;
+        top: 25px;
+        left: 0px;
+    }
         
     .article {
         width: calc(100% - 55px);
-    }
-    
-    .article:hover {
-        box-shadow: 5px 5px 0px #7396DC;
+        margin: 40px 27.5px;
     }
     
     .article > .popout > .link {
@@ -1142,12 +1145,15 @@ textarea:focus, input:focus {
 
 @media screen and (max-width: 370px) {    
     .em-tparagraph {
-        margin-left: calc(50% - 125px - 10px);
+        margin-left: 0px;
     }
     
     .team-image-cont {
         width: 250px;
         height: 250px;
+        
+        margin: calc(50% - 125px);
+        margin-top: 0px;
     }
     
     .panel-overlay-left {
@@ -1155,12 +1161,7 @@ textarea:focus, input:focus {
     }
     
     .panel-overlay-right {
-        font-size: 0.65em;
-        width: calc(100% - 30px);
-    }
-    
-    .panel-left {
-        background-color: white;
+        font-size: 0.55em;
     }
 
 }
