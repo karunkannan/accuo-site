@@ -1066,11 +1066,15 @@ textarea:focus, input:focus {
     }
     
     #problem > .em-paragraph {
-        padding-top: 150px;
+        padding-top: 0px;
+    }
+    
+    #tech > .em-pane-title {
+        margin-top: 0px;
     }
 
     #tech > .em-paragraph {
-        padding-top: 100px;
+        padding-top: 0px;
     }
     
     .tech-image {
@@ -1097,8 +1101,10 @@ textarea:focus, input:focus {
     .prob-video {
         width: 100%;
         height: auto;
-        top: 25px;
+        top: 0px;
+        margin-top: 25px;
         left: 0px;
+        margin-bottom: 50px;
     }
         
     .article {
