@@ -313,14 +313,20 @@ html, body {
     margin-top: 0px;
 }
 
-.prob-video {
+.video-cont {
     z-index: 1;
     position: relative;
     float: left;
     width: 50%;
-    height: auto;
+    height: 0;
+    padding-bottom: 29%;
     top: 25px;
-    left: 10px;
+    left: 10px;    
+}
+
+.prob-video {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -364,8 +370,8 @@ html, body {
 }
 
 .em-paragraph-mission {
-    top: calc(50% - 125px);
-    font-size: 0.9em;
+    top: calc(50% - 100px);
+    font-size: 0.8em;
     line-height: 200%;
     color: rgba(45,70,117, 0.7);
     margin: 0px 15%;
@@ -411,7 +417,7 @@ html, body {
     width: calc(76%);
     text-align: left;
     top: calc(50% - 200px);
-    left: 12%;
+    margin-left: calc(50% - 550px);
     font-weight: 900;
     color: rgba(45,70,117, 0.75);
     font-family: raleway-light;
@@ -774,6 +780,143 @@ html, body {
 
 textarea:focus, input:focus {
     outline: none;
+}
+
+@media screen and (max-width: 1100px) { 
+    .em-paragraph-mission {
+        font-size: 0.7em;
+    }   
+    
+    .em-pane-title {
+        margin-left: 10px;
+    }
+    
+    .em-paragraph {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) { 
+    .em-pane-title {
+        top: 75px;
+    }
+    
+    #mission > .em-pane-title {
+        top: calc(50% - 200px);
+    }
+        
+    .em-paragraph {
+        top: 100px;
+    }
+    
+    .em-paragraph-mission {
+        margin: 0px 10%;
+        top: calc(50% - 125px);
+    }   
+
+    .tech-info {
+        width: calc(100% + 10px);
+    }
+    
+    .video-cont {
+        margin-top: 25px;
+        margin-left: 25%;
+        left: 0px;
+    }
+    
+    .sidebar {
+        height: 0px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 700px) { 
+    .header {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+    }
+    
+    .hamburger {
+        height: 30px;
+    }
+
+    .menu {
+        display: block;
+        position: relative;
+        left: 0px;
+        top: -6px;
+        padding: 0px;
+        height: 0px;
+        overflow: hidden;
+        box-shadow: 0px 3px 3px -3px #2D4675;
+    }
+    
+    .menu-active {
+        height: 350px;
+    }
+        
+    .menu-title {
+        width: calc(100%);
+        height: auto;
+        padding-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: #EEE;
+    }
+    
+    .menu-title:hover {
+        background-color: #DDD;
+    }
+    
+    .menu-sub {
+        background-color: none;
+        box-shadow: none;
+        opacity: 1;
+        height: auto;
+        top: -5px;
+    }
+    
+    .menu-sub-active {
+        top: -5px;
+    }
+    
+    .menu-subtitle {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .menu-subtitle:hover {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .menu-underline-active {
+        bottom: 5px;
+        opacity: 0;
+    }
+    
+    #home, #mission, #problem, #tech, #solution, #team, #contact {
+        height: auto;
+    }
+    
+    #mission > .em-pane-title {
+        margin-top: 75px;
+    }
+    
+    .em-paragraph-mission {
+        margin: 0px 5%;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        line-height: 150%;
+        font-size: 0.5em;
+    }
+    
+    .video-cont {
+        width: 100%;
+        padding-bottom: 56%;
+        margin-left: 5px;
+        margin-bottom: 200px;
+    }
 }
 
 /**@media screen and (max-width: 1280px) { 
