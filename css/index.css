@@ -301,9 +301,9 @@ html, body {
 .em-paragraph {
     font-size: .5em;
     position: relative;
-    margin-top: 20px;
-    margin-right: 12%;
-    margin-left: 12%; 
+    top: calc(50% - 175px);
+    margin-left: calc(50% - 550px);
+    margin-right: calc(50% - 550px);
     font-weight: lighter;
     font-family: raleway-light;
     color: #999;
@@ -318,6 +318,7 @@ html, body {
     position: relative;
     float: left;
     width: 50%;
+    height: auto;
     top: 25px;
     left: 10px;
 }
@@ -363,7 +364,7 @@ html, body {
 }
 
 .em-paragraph-mission {
-    top: calc(50% - 325px);
+    top: calc(50% - 125px);
     font-size: 0.9em;
     line-height: 200%;
     color: rgba(45,70,117, 0.7);
@@ -409,7 +410,7 @@ html, body {
     position: relative;
     width: calc(76%);
     text-align: left;
-    margin-top: calc(50% - 510px);
+    top: calc(50% - 200px);
     left: 12%;
     font-weight: 900;
     color: rgba(45,70,117, 0.75);
@@ -923,12 +924,11 @@ textarea:focus, input:focus {
 
 @media screen and (max-width: 1280px) { 
     .em-tparagraph {
-        margin-left: calc(50% - 525px - 30px);
+        
     }
     
     .team-image-cont {
-        width: 350px;
-        height: 350px;
+
     }
     
     .panel-overlay-right {
@@ -936,21 +936,34 @@ textarea:focus, input:focus {
     }
 }
 
-@media screen and (max-width: 1110px) {    
+@media screen and (max-width: 1110px) {     
+    .em-pane-title {
+        top: 75px;
+        left: 0px;
+    }
+    
+    .em-paragraph {
+        top: 100px;
+        margin-left: calc(10px);
+        margin-right: calc(10px);    
+    }
+    
     .em-tparagraph {
         margin-left: calc(50% - 350px - 20px);
+    }
+    
+    .em-paragraph-mission {
+        font-size: 0.75em;
     }
 }
 
 @media screen and (max-width: 1000px) { 
-    .article {
-        width: calc(50% - 63px);
-    }
+    
 }
 
 @media screen and (max-width: 740px) {    
     .em-tparagraph {
-        margin-left: calc(50% - 175px - 10px);
+        margin-left: calc(50% - 210px);
     }
 }
 
@@ -1027,11 +1040,22 @@ textarea:focus, input:focus {
         height: auto;
     }
     
+    #tech {
+        padding-top: 0px;
+    }
+
+    #news {
+        padding-top: 50px;
+    }
+    
+    #news > .em-pane-title {
+        top: 25px;
+    }
+    
     .em-pane-title {
         left: 0px;
         text-align: center;
         width: 100%;
-        margin-top: 100px;
     }
     
     .news-title {
@@ -1049,7 +1073,7 @@ textarea:focus, input:focus {
     
     .em-paragraph-mission {
         line-height: 150%;
-        top: 50px;
+        top: 100px;
         font-size: 0.6em;
         padding-bottom: 150px;
         margin: 0px 5%;
@@ -1079,8 +1103,9 @@ textarea:focus, input:focus {
     
     .tech-image {
         width: 100%;
-        margin-top: -60%;
-        margin-bottom: 15%;
+        margin-top: 0%;
+        margin-bottom: -200px;
+        top: -200px;
         height: auto;
     }
 
@@ -1096,6 +1121,7 @@ textarea:focus, input:focus {
         width: 100%;
         font-size: 0.75em;
         z-index: 4;
+        padding-bottom: 50px;
     }
     
     .prob-video {
@@ -1104,7 +1130,7 @@ textarea:focus, input:focus {
         top: 0px;
         margin-top: 25px;
         left: 0px;
-        margin-bottom: 50px;
+        margin-bottom: 150px;
     }
         
     .article {
