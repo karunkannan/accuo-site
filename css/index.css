@@ -804,6 +804,7 @@ textarea:focus, input:focus {
 
 @media screen and (max-width: 900px) { 
     .em-pane-title, #tech > .em-pane-title {
+        width: 75%;
         top: 75px;
     }
     
@@ -840,12 +841,14 @@ textarea:focus, input:focus {
     }
     
     .tech-image-tool {
-        left: 42.5%;
+        left: 35%;
+        width: 30%;
     }
 
     .tech-image {
-        margin-left: 25%;
-        margin-top: -50px;
+        margin-left: 0%;
+        margin-top: -100px;
+        width: 100%;
     }
     
     .video-cont {
