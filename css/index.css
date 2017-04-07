@@ -270,11 +270,11 @@ html, body {
 }
 
 
-#home, #problem, #mission, #solution, #contact {
+#home, #problem, #tech, #mission, #solution, #contact {
     height: 100%;
 }
 
-#tech, #team, #news {
+#team, #news {
     padding-top: 75px;
     padding-bottom: 75px;
     background-color: #2D4675;
@@ -440,8 +440,9 @@ html, body {
 }
 
 .title-right {
-    left: 50%;
+    left: calc(50%);
     width: calc(38%);
+    margin-left: 0px;
 }
 
 #problem > .em-pane-title {
@@ -449,7 +450,7 @@ html, body {
 }
 
 #tech > .em-pane-title {
-    margin-top: calc(50% - 550px);
+    top: calc(50% - 175px);
 }
 
 #team > .em-pane-title{
@@ -791,6 +792,10 @@ textarea:focus, input:focus {
         margin-left: 10px;
     }
     
+    .title-right {
+        margin-left: 0px;
+    }
+    
     .em-paragraph {
         margin-left: 10px;
         margin-right: 20px;
@@ -798,8 +803,13 @@ textarea:focus, input:focus {
 }
 
 @media screen and (max-width: 900px) { 
-    .em-pane-title {
+    .em-pane-title, #tech > .em-pane-title {
         top: 75px;
+    }
+    
+    .title-right {
+        left: 0%;
+        margin-left: 10px;
     }
     
     #mission > .em-pane-title {
@@ -810,6 +820,10 @@ textarea:focus, input:focus {
         top: 100px;
     }
     
+    #problem > .em-paragraph {
+        top: 150px;
+    }
+    
     .em-paragraph-mission {
         margin: 0px 10%;
         top: calc(50% - 125px);
@@ -817,10 +831,24 @@ textarea:focus, input:focus {
 
     .tech-info {
         width: calc(100% + 10px);
+        margin-top: -50px;
+        margin-bottom: 100px;
+    }
+    
+    #problem > .em-paragraph > .tech-info {
+        margin-bottom: 0px;
+    }
+    
+    .tech-image-tool {
+        left: 42.5%;
+    }
+
+    .tech-image {
+        margin-left: 25%;
+        margin-top: -50px;
     }
     
     .video-cont {
-        margin-top: 25px;
         margin-left: 25%;
         left: 0px;
     }
@@ -902,7 +930,7 @@ textarea:focus, input:focus {
     #mission > .em-pane-title {
         margin-top: 75px;
     }
-    
+        
     .em-paragraph-mission {
         margin: 0px 5%;
         margin-top: 10px;
@@ -917,6 +945,11 @@ textarea:focus, input:focus {
         margin-left: 5px;
         margin-bottom: 200px;
     }
+    
+    .tech-image {
+        margin-top: 10px;
+    }
+
 }
 
 /**@media screen and (max-width: 1280px) { 
