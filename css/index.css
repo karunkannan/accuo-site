@@ -783,6 +783,22 @@ textarea:focus, input:focus {
     outline: none;
 }
 
+@media screen and (max-width: 1260px) {
+    #team > .em-pane-title {
+        margin-left: calc(50% - 480px);
+    }
+    
+    .team-image-cont {
+        margin: 30px;
+        margin-top: 0px;
+        margin-bottom: 60px;
+    }
+    
+    .em-tparagraph {   
+        margin-left: calc(50% - 540px);
+    }
+}
+
 @media screen and (max-width: 1100px) { 
     .em-paragraph-mission {
         font-size: 0.7em;
@@ -790,6 +806,10 @@ textarea:focus, input:focus {
     
     .em-pane-title {
         margin-left: 10px;
+    }
+    
+    #team > .em-pane-title {
+        margin-left: calc(50% - 445px);
     }
     
     .title-right {
@@ -800,12 +820,40 @@ textarea:focus, input:focus {
         margin-left: 10px;
         margin-right: 20px;
     }
+    
+    .team-image-cont {
+        margin: 15px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+    
+    .em-tparagraph {   
+        margin-left: calc(50% - 495px);
+    }
+}
+
+@media screen and (max-width: 1000px) { 
+    #team > .em-pane-title {
+        margin-left: calc(50% - 420px);
+    }
+    
+    .team-image-cont {
+        margin: 0px;
+    }
+    
+    .em-tparagraph {   
+        margin-left: calc(50% - 450px);
+    }
 }
 
 @media screen and (max-width: 900px) { 
     .em-pane-title, #tech > .em-pane-title {
         width: 75%;
         top: 75px;
+    }
+    
+    #team > .em-pane-title {
+        top: 0px;
     }
     
     .title-right {
@@ -860,6 +908,20 @@ textarea:focus, input:focus {
         height: 0px;
         overflow: hidden;
     }
+    
+    #team > .em-pane-title {
+        margin-left: calc(50% - 310px);
+    }
+    
+    .team-image-cont {
+        margin: 20px;
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+    
+    .em-tparagraph {   
+        margin-left: calc(50% - 340px);
+    }
 }
 
 @media screen and (max-width: 700px) { 
@@ -867,6 +929,10 @@ textarea:focus, input:focus {
         padding-left: 0px;
         padding-right: 0px;
         width: 100%;
+    }
+    
+    #team > .em-pane-title {
+        margin-left: 10px;
     }
     
     .hamburger {
@@ -952,7 +1018,27 @@ textarea:focus, input:focus {
     .tech-image {
         margin-top: 10px;
     }
+    
+    .team-image-cont {
+        margin: 10px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .em-tparagraph {   
+        margin-left: calc(50% - 160px);
+    }
+}
 
+@media screen and (max-width: 370px) {    
+    .team-image-cont {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .em-tparagraph {   
+        margin-left: calc(50% - 135px);
+    }    
 }
 
 /**@media screen and (max-width: 1280px) { 
