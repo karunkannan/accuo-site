@@ -361,6 +361,10 @@ html, body {
     text-align: left;
 }
 
+.tech-info-right {
+    width: calc(50% - 20px);
+}
+
 .em-tparagraph {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -487,24 +491,21 @@ html, body {
     top: -100px;
 }
 
-.soln-icon {
+.soln-box {
     position: relative;
-    width: 90%;
-    margin: 0px 25%;
-    margin-top: 15%;
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 50px;
 }
 
-.soln-col {
-    position: relative;
+.soln-cont {
     float: left;
     width: 33%;
-    margin-top: 8%;
 }
 
-.soln-col-para {
-    font-size: 18px;
-    margin: 0px 12.5%;
-    margin-top:14%;
+.soln-icon {
+    width: 100px;
 }
 
 .team-image-cont {
@@ -890,6 +891,20 @@ textarea:focus, input:focus {
         margin-bottom: 100px;
     }
     
+    #solution > .em-paragraph > .tech-info {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .soln-box {
+        margin-bottom: 100px;
+    }
+    
+    .soln-cont {
+        float: none;
+        margin-left: calc(33%);
+    }
+    
     #problem > .em-paragraph > .tech-info {
         margin-bottom: 0px;
     }
@@ -1033,6 +1048,24 @@ textarea:focus, input:focus {
     
     .em-tparagraph {   
         margin-left: calc(50% - 160px);
+    }
+    
+    .pure-group > label {
+        left: 30px;
+    }
+    
+    .pure-group > input, .pure-group > textarea {
+        left: 0%;
+        width: calc(100% - 0px);
+    }
+    
+    #contact {
+        height: auto;
+    }
+    
+    .pure-form {
+        position: relative;
+        top: 0px;
     }
     
     #contact {
