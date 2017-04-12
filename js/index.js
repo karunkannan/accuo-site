@@ -82,6 +82,8 @@ $(document).ready(function() {
     
     currentPane = pane;
     
+    resize();
+    
     /**$(".article").each(function() {
         $(this).css("height", $(this).css("height"));
         $(this).children(".popout").children(".body").css("height", "auto");
@@ -115,6 +117,14 @@ function startLoading() {
     $(".send").text("");
     $(".loading-bubble").addClass("loading-bubble-active");
 }
+
+function resize() {
+    $(".video-cont").css("height", 0.58 * parseInt($(".video-cont").css("width")));
+}
+
+$( window ).resize(function() {
+    resize();
+});
 
 $(window).scroll(function (event) {
     scrollEvent();
