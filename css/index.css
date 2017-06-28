@@ -299,7 +299,7 @@ html, body {
 }
 
 .em-paragraph {
-    font-size: .5em;
+    font-size: .56em;
     position: relative;
     top: calc(50% - 175px);
     margin-left: calc(50% - 550px);
